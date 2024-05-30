@@ -1,0 +1,68 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create New User</title>
+
+    <script src="~/Scripts/jQuery-2.1.3.min.js"></script>
+    @*<script src="~/Scripts/jquery-ui-1.8.24.min.js"></script>*@
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+    <link href="~/Content/css/AjaxLoader.css" rel="stylesheet" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/Scripts/Custom.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+
+</head>
+@using SpdySvc.Models;
+@{
+
+    List<User> usrList = (List<User>)(ViewBag.USRLST);
+
+
+}
+<body>
+
+    <div class="wrapper">
+
+
+        <form id="hirevalue">
+            <div class="alert alert-danger" role="alert" id="warNing" style="display:none;"></div>
+            <div class="alert alert-danger" role="alert" id="lblMsg" style="display:none;"></div>
+            <input type="hidden" id="hdnUID" value="" />
+
+            <div class="form-group">
+                <label for="exampleInputEmail1">First Name</label>
+                <input class="form-control" type="text" value="" placeholder="" readonly>
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Last Email</label>
+                <input class="form-control" type="text" value="" placeholder="" readonly>
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Ki ar</label>
+                <input class="form-control" type="text" name="HireValue" id="HireValue" value="" placeholder="">
+
+            </div>
+            <div class="row">
+
+                <div class="col-xs-4" style="width:20%">
+                    <button type="submit" class="btn btn-primary btn-block btn-flat">Add User</button>
+                </div><!-- /.col -->
+            </div>
+        </form>
+
+
+    </div>
+
+    <script src="~/Scripts/HireLimitChange.js"></script>
+</body>
+</html>

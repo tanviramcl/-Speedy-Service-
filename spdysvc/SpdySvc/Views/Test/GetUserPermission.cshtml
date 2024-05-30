@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "GetUserPermission";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>GetUserPermission</h2>
+<h3>@ViewBag.Message</h3>
+
+@using SpdySvc.Models;
+@using SpdySvc.Models.SpdyMembershipUser;
+@{
+    List<PermissionDetails> lstPermissionDetails = (List<PermissionDetails>)ViewBag.permissLst;
+}
+
+@foreach (PermissionDetails pd in lstPermissionDetails)
+{ 
+   <strong>PermissionID: @pd.Permission_ID </strong><br />
+    <strong>CanApprove: @pd.CanApprove </strong><br />
+    <strong>CanCancel: @pd.CanCancel </strong><br />
+    <strong>CanViewHire: @pd.CanViewHire</strong><br />
+    <strong>CanViewUser: @pd.CanViewUser</strong><br />
+}

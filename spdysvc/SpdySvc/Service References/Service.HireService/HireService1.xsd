@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Speedy.DataTransferObjects.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Speedy.DataTransferObjects.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://speedyservices.speedytest.co.uk/HireService/HireService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Speedy.DataTransferObjects.HireService" />
+  <xs:complexType name="BaseRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AxaptaCompany" type="tns:AxaptaCompanyType" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BaseRequest" nillable="true" type="tns:BaseRequest" />
+  <xs:complexType name="BaseMessage">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AccountId" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="BaseMessage" nillable="true" type="tns:BaseMessage" />
+  <xs:simpleType name="AxaptaCompanyType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SAS" />
+      <xs:enumeration value="BAS" />
+      <xs:enumeration value="DUB" />
+      <xs:enumeration value="NIR" />
+      <xs:enumeration value="SIR" />
+      <xs:enumeration value="EGT" />
+      <xs:enumeration value="OMA" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="AxaptaCompanyType" nillable="true" type="tns:AxaptaCompanyType" />
+  <xs:complexType name="CardChargesDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AmountCharged" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ApprovalCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ApprovalDate" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CardChargesDto" nillable="true" type="tns:CardChargesDto" />
+  <xs:complexType name="PersonDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Address" nillable="true" type="tns:AddressDto" />
+      <xs:element minOccurs="0" name="ContactDetails" nillable="true" type="tns:ContactDetailsDto" />
+      <xs:element minOccurs="0" name="DateOfBirth" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FirstName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LastName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="OptOuts" nillable="true" type="tns:OptOutsDto" />
+      <xs:element minOccurs="0" name="Title" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="PersonDto" nillable="true" type="tns:PersonDto" />
+  <xs:complexType name="AddressDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="AddressLine1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressLine2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="AddressName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Country" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="County" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Postcode" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="AddressDto" nillable="true" type="tns:AddressDto" />
+  <xs:complexType name="ContactDetailsDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="EmailAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FaxNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MobileNumber" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TelephoneNumber" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ContactDetailsDto" nillable="true" type="tns:ContactDetailsDto" />
+  <xs:complexType name="OptOutsDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Email" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Post" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SMS" type="xs:boolean" />
+      <xs:element minOccurs="0" name="SelectedPartners" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Telephone" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ThirdParty" type="xs:boolean" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="OptOutsDto" nillable="true" type="tns:OptOutsDto" />
+  <xs:complexType name="ArrayOfRequestProductDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="RequestProductDto" nillable="true" type="tns:RequestProductDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfRequestProductDto" nillable="true" type="tns:ArrayOfRequestProductDto" />
+  <xs:complexType name="RequestProductDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="FromDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ProductId" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/Speedy.DataTransferObjects.HireService" minOccurs="0" name="ProductIndicator" nillable="true" type="q1:HireLineType" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:decimal" />
+      <xs:element minOccurs="0" name="ToDate" nillable="true" type="xs:dateTime" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="RequestProductDto" nillable="true" type="tns:RequestProductDto" />
+  <xs:complexType name="BaseResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension base="tns:BaseMessage">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Error" nillable="true" type="tns:ErrorDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="BaseResponse" nillable="true" type="tns:BaseResponse" />
+  <xs:complexType name="ErrorDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ErrorCode" type="xs:int" />
+      <xs:element minOccurs="0" name="ErrorText" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ErrorDto" nillable="true" type="tns:ErrorDto" />
+</xs:schema>

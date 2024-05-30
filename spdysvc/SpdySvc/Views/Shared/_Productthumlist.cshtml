@@ -1,0 +1,32 @@
+﻿@if (ViewBag.Products != null)
+{
+    foreach (var product in ViewBag.Products)
+    {
+
+        string Img = "default-image.png";
+        string instock = "";
+        /*if (product.file_name == "")
+        {
+            Img = "default-image.png";
+        }
+        else
+        {
+            Img = product.file_name;
+        } */
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <a href="/category/product/@product.product_code">
+                    <img alt="" src="~/Images/ProductImage/@Img">
+                </a>
+                <div class="caption">
+                    <h4>
+                        <a href="/category/product/@product.product_code">@product.name</a>
+                    </h4>
+                    <h4>
+                        <a href="/category/product/@product.product_code">@product.product_code</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    }
+}

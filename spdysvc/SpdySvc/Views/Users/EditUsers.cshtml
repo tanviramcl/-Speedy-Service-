@@ -1,0 +1,88 @@
+﻿@{
+    ViewBag.Title = "Edit User";
+    Layout = null;
+}
+<script src="~/Scripts/jQuery-2.1.3.min.js"></script>
+@*<script src="~/Scripts/jquery-ui-1.8.24.min.js"></script>*@
+<script src="~/Scripts/bootstrap.min.js"></script>
+<link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+<link href="~/Content/css/AjaxLoader.css" rel="stylesheet" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+<script src="~/Scripts/Custom.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<style type="text/css">
+    label.error {
+        color: red;
+    }
+</style>
+@using SpdySvc.Models;
+@{
+    
+    
+    SpdySvc.FactoryPush fac = new SpdySvc.FactoryPush();
+    List<User> lstUsers = new List<User> ();
+    lstUsers = fac.GetRecords<User>(new SpdySvc.BLSp().SP_GetAllUserRecords()).Where(x=>x.UserID==Convert.ToInt32(ViewBag.UserID)).ToList();
+
+        }
+            <h4>@ViewBag.Title</h4>
+            <div class="row">
+                <div class="col-xs-8 col-md-12">
+                    <form id="editForm">
+                        <div class="alert alert-danger" role="alert" id="lblMsg-error" style="display:none;"></div>
+                        <div class="alert alert-success" role="alert" id="lblMsg-success" style="display:none;"></div>
+
+                        <div class="form-group ">
+                            <label for="firstname">User ID:</label>
+                            <input type="text" class="form-control col-md-5" disabled="disabled" name="txtUId" id="txtUId" value="@lstUsers[0].UserID" placeholder="User ID">
+                        </div>
+                        <div class="form-group ">
+
+                            <label for="firstname">First Name:</label>
+                            <input type="text" class="form-control" name="txtfNm" value="@lstUsers[0].FirstName" id="txtfNm" placeholder="First Name">
+                        </div>
+                        <div class="form-group ">
+                            <label for="lastname">Last Name:</label>
+                            <input type="text" class="form-control" name="txtlNm" value="@lstUsers[0].LastName" id="txtlNm" placeholder="Last Name">
+
+                        </div>
+
+                        <div class="form-group ">
+
+                            <label for="firstname">Job Title:</label>
+                            <input type="text" class="form-control" name="txtjobTitle" value="@lstUsers[0].JobTitle" id="txtjobTitle" placeholder="Job Title">
+                        </div>
+                        <div class="form-group ">
+                            <label for="Phone">Hire Limit:</label>
+                            <input type="text" class="form-control" name="txtHireLimit" id="txtHireLimit" value="@lstUsers[0].HireLimit" placeholder="HireLimit">
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="email">Email:</label>
+                            <input type="text" class="form-control" disabled="disabled" name="txtemail" value="@lstUsers[0].Email" id="txtemail" placeholder="Email">
+                        </div>
+                        <div class="form-group ">
+                            <label for="Phone">Phone No:</label>
+                            <input type="text" class="form-control" name="txtphone" id="txtphone" value="@lstUsers[0].PhoneNumber" placeholder="Phone">
+                        </div>
+
+
+
+                        @*<div class="form-group form-inline">
+                            <label for="Password">Password:</label>
+                            <input type="password" class="form-control" name="txtpass" id="txtpass" placeholder="Password">
+                        </div>
+                        <div class="form-group form-inline">
+                            <label for="confirmPassword">Type Again</label>
+                            <input type="password" class="form-control" name="txtconfirmpass" id="txtconfirmpass" placeholder="Confirm Password">
+                        </div>*@
+
+
+
+                        <button class="btn btn-info" id="btnSave" onclick="">Save</button>
+
+                    </form>
+                </div>
+            </div>
+            <script src="~/Scripts/customResistation.js"></script>

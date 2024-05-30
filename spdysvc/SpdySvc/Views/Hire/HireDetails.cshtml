@@ -1,0 +1,187 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HireDetails</title>
+
+    <script src="~/Scripts/jQuery-2.1.3.min.js"></script>
+    @*<script src="~/Scripts/jquery-ui-1.8.24.min.js"></script>*@
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <link href="~/Content/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker3.min.css" />
+    <link href="~/Content/css/AjaxLoader.css" rel="stylesheet" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="~/Scripts/Custom.js"></script>
+
+
+
+    <style type="text/css">
+        .rowDatepicker{
+
+            min-width:150px;
+        }
+        .dates {
+            min-width:150px;
+        }
+        .submitbutton {
+            clear: both;
+            float: right;
+            margin-right: 20%;
+            margin-top: 6%;
+        }
+
+        .form-control {
+            float: right;
+            width: 52%;
+            margin-right: 31%;
+        }
+
+        .labelInput {
+            float: right;
+            margin-right: 68%;
+        }
+
+        #dateRangeForm .form-control-feedback {
+            top: 0;
+            right: -15px;
+        }
+
+        .grandtotl {
+            float: right;
+            margin-right: 30%;
+        }
+
+        .input-group {
+            border-collapse: separate;
+            display: table;
+            position: relative;
+            width: 52%;
+        }
+    </style>
+</head>
+@using SpdySvc.Models;
+@using SpdySvc.Models.SpdyMembershipUser;
+@{
+    List<OrderDetails> ordDetails = (List<OrderDetails>)ViewBag.TrnList;
+}
+<body>
+
+    <div class="wrapper">
+
+
+        <form>
+            <input type="hidden" id="UserId" value="@ordDetails[0].UserId" />
+            <input type="hidden" id="hdnId" value="@ordDetails[0].OrderId" />
+            <div class="form-group" style="margin-left:20%">
+                <label id="lblMsg"></label>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Order Placed By</label>
+                <input class="form-control" type="text" value="@ordDetails[0].OrderPlacedBy" placeholder="" readonly>
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Order Reference</label>
+                <input class="form-control" type="text" value="@ordDetails[0].OrderId" placeholder="" readonly>
+
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Hire Status</label>
+                <input class="form-control" type="text" value="@(ordDetails[0].OrderStatus)" placeholder="" readonly>
+            </div>
+            @*<div class="form-group">
+                    <label for="exampleInputEmail1">Approve Status</label>
+                    <input class="form-control" type="text" value="@(trDetails[0].ApproveStatus.Equals("true") ? "Approved" : "UnApproved")" placeholder="" readonly>
+                </div>*@
+            @*<div class="form-group">
+                    <label for="exampleInputEmail1">Total Hire Cost</label>
+                    <input class="form-control" type="text" value="@ordDetails[0].TotalHireCost" placeholder="" readonly>
+                </div>*@
+            <div class="form-group">
+                <label for="exampleInputEmail1">Requester</label>
+                <input class="form-control" type="text" value="@ordDetails[0].FirstName" placeholder="" readonly>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Hire Limit</label>
+                <input class="form-control" id="txtHLmt" type="text" value="@ordDetails[0].HireLimit" placeholder="" readonly>
+            </div>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Hire On</label>
+                <input class="form-control" id="d1" type="text" value="@ordDetails[0].OnHireDate.ToString().Split(' ')[0]" placeholder="" readonly>
+            </div>
+            @*<div class="form-group">
+                    <label class="col-sm-2 control-label">Hire ON</label>
+                    <div class="input-group input-append date" id="dateRangePicker">
+                        <input type="text" class="form-control" id="d3"   value="@ordDetails[0].OnHireDate.ToString().Split(' ')[0]" />
+                        <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                    </div>
+                </div>*@
+            <div class="form-group">
+                <label class="col-sm-2 control-label">Hire Off </label>
+                <div class="input-group input-append date" id="dateRangePicker2">
+                    <input type="text" class="form-control" id="d2" name="date" value="@ordDetails[0].OffHireDate.ToString().Split(' ')[0]" />
+                    <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                </div>
+            </div>
+        </form>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+
+                    <th>Item</th>
+                    <th>Qty</th>
+                    <th>Unit/Days</th>
+                    <th>Total Cost</th>
+                    <th>From Date</th>
+                    <th>To Date</th>
+                    <th></th>
+                </tr>
+            </thead>
+            @{
+                double total = 0.00;
+                foreach (OrderDetails trDt in ordDetails)
+                {
+                    int days = trDt.OffHireDate.Subtract(trDt.OnHireDate).Days;
+                    //double tCost = Convert.ToDouble(trDt.Quantity) * Convert.ToDouble(trDt.Value)*days; //* Convert.ToInt32(trDt.Cost); //Convert.ToInt32(trDt.TotalHireCost);        //
+
+                    total += trDt.Value;
+                    <tr>
+
+                        <td style="display:none">@trDt.Quantity</td>
+                        <td style="display:none">@trDt.Value</td>
+                        <td>@trDt.ProductName</td>
+                        <td><input type="text" value="@trDt.Quantity" onchange="OnQuantityOrToDateChange(this)" onkeyup="" /></td>
+                        <td>@(trDt.OffHireDate.Subtract(trDt.OnHireDate).TotalDays)</td>@*@trDt.Quantity  | *@
+
+                        <td>@trDt.Value</td>
+                        <td style="display:none">@trDt.ProductCode</td>
+                        <td style="display:none">@trDt.Value</td>
+                        <td style="display:none">@trDt.Quantity</td>
+                        <td> @ordDetails[0].OnHireDate.ToString().Split(' ')[0]</td>
+                        <td>
+                            <div class="input-group input-append date rowDatepicker">
+                                <input type="text" class="form-control" name="date" onchange="OnQuantityOr  ToDateChange(this)" value="@ordDetails[0].OffHireDate.ToString().Split(' ')[0]" />
+                                <span class="input-group-addon add-on"><span class="glyphicon glyphicon-calendar"></span></span>
+                            </div>
+                        </td>
+                        <td><button class="btn btn-danger" type="button" id="" onclick="RemoveRow(this)"> X </button></td>
+                    </tr>
+                }
+            }
+
+        </table>
+        <div class="grandtotl"> <div class="grandtotl">Grand Total: </div> <label id="lblGTotal">@total</label></div>
+
+    </div>
+    <input class="btn btn-default submitbutton" type="submit" value="Submit Changes" onclick="Submit()">
+    <script src="~/Scripts/CustomHiewDetails.js"></script>
+
+
+</body>
+</html>

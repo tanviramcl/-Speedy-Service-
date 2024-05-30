@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="35759f10-9a0a-43d9-bd0a-a0c42144db5a" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://speedyservices.speedytest.co.uk/PriceService/PriceService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="PriceService.xsd" MetadataType="Schema" ID="dcfecf6e-e40f-4804-a8c2-1e8e11277781" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/PriceService/PriceService.svc?xsd=xsd0" />
+    <MetadataFile FileName="PriceService1.xsd" MetadataType="Schema" ID="62566ce0-8fb8-42bc-a4f8-5fb8cde37c81" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/PriceService/PriceService.svc?xsd=xsd1" />
+    <MetadataFile FileName="PriceService2.xsd" MetadataType="Schema" ID="715a873c-1339-4fcb-903b-ba518538e939" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/PriceService/PriceService.svc?xsd=xsd2" />
+    <MetadataFile FileName="PriceService3.xsd" MetadataType="Schema" ID="13d3fe33-ac15-474e-b591-afd88a410158" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/PriceService/PriceService.svc?xsd=xsd3" />
+    <MetadataFile FileName="PriceService4.xsd" MetadataType="Schema" ID="fa56ee3c-4652-4605-a8b7-d6a3a3f5421a" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/PriceService/PriceService.svc?xsd=xsd4" />
+    <MetadataFile FileName="PriceService.wsdl" MetadataType="Wsdl" ID="c7096d0d-2b21-46c2-8883-deafda3f323a" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/PriceService/PriceService.svc?wsdl" />
+    <MetadataFile FileName="PriceService5.xsd" MetadataType="Schema" ID="1ae04a98-b3a4-4a3c-9bfe-1fc0ae68174e" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/PriceService/PriceService.svc?xsd=xsd5" />
+    <MetadataFile FileName="PriceService.disco" MetadataType="Disco" ID="5fc96067-e29a-4ddb-845c-56b85c72e032" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/PriceService/PriceService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

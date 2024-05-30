@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "HireLimit";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<meta name="viewport" content="width=device-width" />
+
+
+<link type="text/css" href="~/Content/css/jquery.dataTables.css" rel="stylesheet" />
+<link type="text/css" href="~/Content/css/shCore.css" rel="stylesheet" />
+<style type="text/css" class="init">
+    
+</style>
+<script src="~/Scripts/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="~/Scripts/HireView.js"></script>
+
+<script src="~/Scripts/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="~/Scripts/shCore.js"></script>
+<script type="text/javascript" language="javascript" src="~/Scripts/demo.js"></script>
+<script type="text/javascript" language="javascript" class="init">
+
+    $(document).ready(function () {
+        $('#example').dataTable();
+    });
+
+
+
+</script>
+@Html.Partial("_Modal")
+<section class="content-header">
+    <h1>
+   Hire Limit Of All Requester
+    </h1>
+</section>
+@using SpdySvc.Models;
+@using SpdySvc.Models.SpdyMembershipUser;
+@using System.Web.Security;
+@using SpdySvc.SingleTon;
+@using SpdySvc.Utility;
+@{
+    List<User> usrLst = SingleTon.Instance().USER_LIST;
+}
+<section class="content">
+    <div class="box">
+        <div class="box-body">
+             
+            <table id="example" class="display compact" cellspacing="0" width="100%">
+                <thead>
+                    <tr> 
+                        <th>Requester ID</th>                      
+                        <th>Requester Name</th>
+                        <th>Hire Limit</th>
+                        <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (User usr in usrLst)
+                {
+                        String url = "../Modal/CommonModal?IDN=" + usr.UserID + "&Type=" + CommonModal.HIRE_LIMIT;
+                        <tr>
+                            <td>@usr.Email</td>
+                            <td>@usr.FirstName  @usr.LastName</td>                            
+                             <td>@usr.HireLimit</td>  
+                            
+                            <td><button type="button" id="mod1" class="btn btn-info" data-toggle="modal" href="@url" data-target="#myModal">Update Value</button></td>
+                        </tr>
+
+                    }
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+</section>

@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        @Html.Partial("_Head")
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <div class="container">
+                    <div role="navigation" class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <a href="/" class="navbar-brand">
+                                <img alt="speedy-logo" src="/images/speedy-logo.png">
+                                @*<span class="logo_title"><strong>Speedy Service</strong></span>
+                                <span class="logo_subtitle">a multipurpose template</span>*@
+                            </a>
+                            @*<a data-target=".navbar-collapse" data-toggle="collapse" class="btn btn-navbar btn-default navbar-toggle">
+                                <span class="nb_left pull-left"> <span class="fa fa-reorder"></span></span> <span class="nb_right pull-right">menu</span>
+                            </a>*@
+                        </div>
+                        <div class="clearfix" id="account-controls">
+                            @Html.Partial("_LoginPartial")
+                        </div>
+                    </div>
+                    <div class="header-title"> @ViewBag.Title</div>
+                </div>
+            </header>
+
+            <div class="main">
+                <div class="container">
+                    @RenderSection("featured", required: false)
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-3 col-lg-3 col-md-3">                                
+                                <!--Sidebar content-->
+                                @Html.Partial("_Categorylist")
+                            </div>
+                            <div class="col-sm-9 col-lg-9 col-md-9">
+                                @RenderBody()
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer>
+                    <div class="footer-top site-width clearfix">
+                        <div class="container">
+                            &nbsp;
+                        </div>
+                    </div>
+                    <section class="copyright">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-6"> &copy; @DateTime.Now.Year - Speedy Service all rights reserved </div>
+                                <div class="text-right col-sm-6 col-md-6"> </div>
+                            </div>
+                        </div>
+                    </section>
+                </footer>
+            </div>
+        </div>
+        @Html.Partial("_Script")
+        @RenderSection("scripts", required: false)
+    </body>
+</html>
+

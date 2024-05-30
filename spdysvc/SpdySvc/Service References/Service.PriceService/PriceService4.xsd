@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Speedy.DataTransferObjects.HireService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Speedy.DataTransferObjects.HireService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:simpleType name="HireLineType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="SingleLine" />
+      <xs:enumeration value="MainKitLine" />
+      <xs:enumeration value="ComponentKitLine" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="HireLineType" nillable="true" type="tns:HireLineType" />
+</xs:schema>

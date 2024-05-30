@@ -1,0 +1,76 @@
+﻿@{
+    ViewBag.Title = "Off Hire";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<meta name="viewport" content="width=device-width" />
+
+
+<link type="text/css" href="~/Content/css/jquery.dataTables.css" rel="stylesheet" />
+<link type="text/css" href="~/Content/css/shCore.css" rel="stylesheet" />
+<style type="text/css" class="init">
+
+</style>
+<script src="~/Scripts/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="~/Scripts/HireView.js"></script>
+
+<script src="~/Scripts/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="~/Scripts/shCore.js"></script>
+<script type="text/javascript" language="javascript" src="~/Scripts/demo.js"></script>
+<script type="text/javascript" language="javascript" class="init">
+
+    $(document).ready(function () {
+        $('#example').dataTable();
+    });
+
+
+
+</script>
+
+@using SpdySvc.Models;
+<section class="content-header">
+    <h2>
+        @ViewBag.Message
+
+    </h2>
+</section>
+<section class="content">
+    <div class="box">
+        <div class="box-body">
+            <table id="example" class="display compact" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Order Reference</th>
+                        <th>Hire On</th>
+                        <th>Hire Off</th>
+                        <th>Hire Status</th>
+                        <th>Requester</th>
+                        <th>Total Cost</th>
+                        <th>Total Hire Deposite</th>
+                        <th>Total Hire Items</th>
+                        <th>Hire Limit</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                   @foreach (Order ord in ViewBag.TrnList)
+                   { 
+                        <tr>
+                            <td>@ord.OrderId</td>
+                            <td>@ord.OnHireDate.ToShortDateString()</td>
+                            <td>@ord.OffHireDate.ToShortDateString()</td>
+                            <td>@(ord.OrderStatus)</td>
+                            <td>@ord.FirstName</td>
+                            <td>@ord.TotalHireCost</td>
+                            <td>@ord.TotalHireDeposit</td>
+                            <td>@ord.TotalHire</td>
+                            <td>@ord.HireLimit</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</section>
+
+

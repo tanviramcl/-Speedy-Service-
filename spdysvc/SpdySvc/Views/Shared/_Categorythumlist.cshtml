@@ -1,0 +1,29 @@
+﻿@if (ViewBag.Categorys != null)
+{
+    foreach (var category in ViewBag.Categorys)
+    {
+
+        string Img = "default-image.png";
+        string instock = "";
+        /*if (category.image == "")
+        {
+            Img = "default-image.png";
+        }
+        else
+        {
+            Img = category.image;
+        } */
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail category">
+                <a href="/category/details/@category.category_id">
+                    <img alt="" src="~/Images/ProductImage/@Img">
+                </a>
+                <div class="caption">
+                    <h4>
+                        <a href="/category/details/@category.category_id">@category.description</a>
+                    </h4>
+                </div>
+            </div>
+        </div>
+    }
+}

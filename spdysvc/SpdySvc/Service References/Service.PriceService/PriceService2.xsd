@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/Speedy.DataTransferObjects.PriceService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Speedy.DataTransferObjects.PriceService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://speedyservices.speedytest.co.uk/PriceService/PriceService.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/Speedy.DataTransferObjects.Common" />
+  <xs:complexType name="PriceEnquiryRequest">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q1="http://schemas.datacontract.org/2004/07/Speedy.DataTransferObjects.Common" base="q1:BaseRequest">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Currency" type="q1:CurrencyType" />
+          <xs:element minOccurs="0" name="DeliveryPreference" nillable="true" type="xs:int" />
+          <xs:element minOccurs="0" name="DisableSalesDeliveryCharge" type="xs:boolean" />
+          <xs:element minOccurs="0" name="FromDate" nillable="true" type="xs:dateTime" />
+          <xs:element minOccurs="0" name="Products" nillable="true" type="q1:ArrayOfRequestProductDto" />
+          <xs:element minOccurs="0" name="ToDate" nillable="true" type="xs:dateTime" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PriceEnquiryRequest" nillable="true" type="tns:PriceEnquiryRequest" />
+  <xs:complexType name="PriceEnquiryDetailResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q2="http://schemas.datacontract.org/2004/07/Speedy.DataTransferObjects.Common" base="q2:BaseResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="AccountType" type="q2:AccountType" />
+          <xs:element minOccurs="0" name="Currency" type="q2:CurrencyType" />
+          <xs:element minOccurs="0" name="DeliveryCharge" nillable="true" type="xs:decimal" />
+          <xs:element minOccurs="0" name="DetailProducts" nillable="true" type="tns:ArrayOfDetailProductDto" />
+          <xs:element minOccurs="0" name="TotalBuyValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalBuyVat" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalHireCost" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalHireDeposit" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalHireValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalHireVat" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalNetValue" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalPayable" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalSpeedyShield" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalSpeedyShieldVAT" type="xs:decimal" />
+          <xs:element minOccurs="0" name="TotalVAT" type="xs:decimal" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PriceEnquiryDetailResponse" nillable="true" type="tns:PriceEnquiryDetailResponse" />
+  <xs:complexType name="ArrayOfDetailProductDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DetailProductDto" nillable="true" type="tns:DetailProductDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDetailProductDto" nillable="true" type="tns:ArrayOfDetailProductDto" />
+  <xs:complexType name="DetailProductDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PriceType" type="tns:PriceType" />
+      <xs:element minOccurs="0" name="ProductId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Quantity" type="xs:decimal" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/Speedy.DataTransferObjects.Common" minOccurs="0" name="RateType" type="q3:RateType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DetailProductDto" nillable="true" type="tns:DetailProductDto" />
+  <xs:simpleType name="PriceType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="NotAvailable" />
+      <xs:enumeration value="OnApplication" />
+      <xs:enumeration value="Available" />
+    </xs:restriction>
+  </xs:simpleType>
+  <xs:element name="PriceType" nillable="true" type="tns:PriceType" />
+  <xs:complexType name="PriceEnquirySummaryResponse">
+    <xs:complexContent mixed="false">
+      <xs:extension xmlns:q4="http://schemas.datacontract.org/2004/07/Speedy.DataTransferObjects.Common" base="q4:BaseResponse">
+        <xs:sequence>
+          <xs:element minOccurs="0" name="Currency" type="q4:CurrencyType" />
+          <xs:element minOccurs="0" name="Products" nillable="true" type="tns:ArrayOfSummaryProductDto" />
+        </xs:sequence>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  <xs:element name="PriceEnquirySummaryResponse" nillable="true" type="tns:PriceEnquirySummaryResponse" />
+  <xs:complexType name="ArrayOfSummaryProductDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SummaryProductDto" nillable="true" type="tns:SummaryProductDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSummaryProductDto" nillable="true" type="tns:ArrayOfSummaryProductDto" />
+  <xs:complexType name="SummaryProductDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="BuyPrice" nillable="true" type="tns:SummaryPriceDto" />
+      <xs:element minOccurs="0" name="DayRate" nillable="true" type="tns:SummaryPriceDto" />
+      <xs:element minOccurs="0" name="ExtraDay" nillable="true" type="tns:SummaryPriceDto" />
+      <xs:element minOccurs="0" name="MinimumWeek" nillable="true" type="tns:SummaryPriceDto" />
+      <xs:element minOccurs="0" name="ProductId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WeekRate" nillable="true" type="tns:SummaryPriceDto" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SummaryProductDto" nillable="true" type="tns:SummaryProductDto" />
+  <xs:complexType name="SummaryPriceDto">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+      <xs:element minOccurs="0" name="PriceType" type="tns:PriceType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SummaryPriceDto" nillable="true" type="tns:SummaryPriceDto" />
+</xs:schema>

@@ -1,0 +1,334 @@
+D:\Project\spdysvc\SpdySvc\bin\SpdySvc.dll
+D:\Project\spdysvc\SpdySvc\bin\SpdySvc.pdb
+D:\Project\spdysvc\SpdySvc\bin\Antlr3.Runtime.dll
+D:\Project\spdysvc\SpdySvc\bin\DotNetOpenAuth.AspNet.dll
+D:\Project\spdysvc\SpdySvc\bin\DotNetOpenAuth.Core.dll
+D:\Project\spdysvc\SpdySvc\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Project\spdysvc\SpdySvc\bin\DotNetOpenAuth.OAuth.dll
+D:\Project\spdysvc\SpdySvc\bin\DotNetOpenAuth.OpenId.dll
+D:\Project\spdysvc\SpdySvc\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Project\spdysvc\SpdySvc\bin\EntityFramework.dll
+D:\Project\spdysvc\SpdySvc\bin\Microsoft.Data.Edm.dll
+D:\Project\spdysvc\SpdySvc\bin\Microsoft.Data.OData.dll
+D:\Project\spdysvc\SpdySvc\bin\Microsoft.Web.Infrastructure.dll
+D:\Project\spdysvc\SpdySvc\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Project\spdysvc\SpdySvc\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Project\spdysvc\SpdySvc\bin\Newtonsoft.Json.dll
+D:\Project\spdysvc\SpdySvc\bin\System.Net.Http.Formatting.dll
+D:\Project\spdysvc\SpdySvc\bin\System.Spatial.dll
+D:\Project\spdysvc\SpdySvc\bin\System.Web.Helpers.dll
+D:\Project\spdysvc\SpdySvc\bin\System.Web.Http.dll
+D:\Project\spdysvc\SpdySvc\bin\System.Web.Http.OData.dll
+D:\Project\spdysvc\SpdySvc\bin\System.Web.Http.WebHost.dll
+D:\Project\spdysvc\SpdySvc\bin\System.Web.Mvc.dll
+D:\Project\spdysvc\SpdySvc\bin\System.Web.Optimization.dll
+D:\Project\spdysvc\SpdySvc\bin\System.Web.Razor.dll
+D:\Project\spdysvc\SpdySvc\bin\System.Web.WebPages.Deployment.dll
+D:\Project\spdysvc\SpdySvc\bin\System.Web.WebPages.dll
+D:\Project\spdysvc\SpdySvc\bin\System.Web.WebPages.Razor.dll
+D:\Project\spdysvc\SpdySvc\bin\WebGrease.dll
+D:\Project\spdysvc\SpdySvc\bin\WebMatrix.Data.dll
+D:\Project\spdysvc\SpdySvc\bin\WebMatrix.WebData.dll
+D:\Project\spdysvc\SpdySvc\bin\EntityFramework.xml
+D:\Project\spdysvc\SpdySvc\bin\Newtonsoft.Json.xml
+D:\Project\spdysvc\SpdySvc\bin\System.Net.Http.Formatting.xml
+D:\Project\spdysvc\SpdySvc\bin\System.Web.Helpers.xml
+D:\Project\spdysvc\SpdySvc\bin\System.Web.Http.xml
+D:\Project\spdysvc\SpdySvc\bin\System.Web.Http.WebHost.xml
+D:\Project\spdysvc\SpdySvc\bin\System.Web.Mvc.xml
+D:\Project\spdysvc\SpdySvc\bin\System.Web.Razor.xml
+D:\Project\spdysvc\SpdySvc\bin\System.Web.WebPages.xml
+D:\Project\spdysvc\SpdySvc\bin\System.Web.WebPages.Deployment.xml
+D:\Project\spdysvc\SpdySvc\bin\System.Web.WebPages.Razor.xml
+D:\Project\spdysvc\SpdySvc\bin\WebMatrix.Data.xml
+D:\Project\spdysvc\SpdySvc\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Project\spdysvc\SpdySvc\bin\WebMatrix.WebData.xml
+D:\Project\spdysvc\SpdySvc\bin\DotNetOpenAuth.AspNet.xml
+D:\Project\spdysvc\SpdySvc\bin\DotNetOpenAuth.Core.xml
+D:\Project\spdysvc\SpdySvc\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Project\spdysvc\SpdySvc\bin\DotNetOpenAuth.OAuth.xml
+D:\Project\spdysvc\SpdySvc\bin\DotNetOpenAuth.OpenId.xml
+D:\Project\spdysvc\SpdySvc\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Project\spdysvc\SpdySvc\bin\System.Web.Http.OData.xml
+D:\Project\spdysvc\SpdySvc\bin\Microsoft.Data.Edm.xml
+D:\Project\spdysvc\SpdySvc\bin\Microsoft.Data.OData.xml
+D:\Project\spdysvc\SpdySvc\bin\System.Spatial.xml
+D:\Project\spdysvc\SpdySvc\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\de\Microsoft.Data.OData.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\es\Microsoft.Data.OData.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\it\Microsoft.Data.OData.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\de\System.Spatial.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\es\System.Spatial.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\fr\System.Spatial.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\it\System.Spatial.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\ja\System.Spatial.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\ko\System.Spatial.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\ru\System.Spatial.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\zh-Hans\System.Spatial.resources.dll
+D:\Project\spdysvc\SpdySvc\bin\zh-Hant\System.Spatial.resources.dll
+D:\Project\spdysvc\SpdySvc\obj\Debug\SpdySvc.dll
+D:\Project\spdysvc\SpdySvc\obj\Debug\SpdySvc.pdb
+D:\Project\spdysvc\SpdySvc\obj\Debug\SpdySvc.csprojResolveAssemblyReference.cache
+E:\rahul\Project\SpdySvc\SpdySvc\bin\SpdySvc.dll.config
+E:\rahul\Project\SpdySvc\SpdySvc\bin\SpdySvc.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\SpdySvc.pdb
+E:\rahul\Project\SpdySvc\SpdySvc\bin\Antlr3.Runtime.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DBManager.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DotNetOpenAuth.AspNet.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DotNetOpenAuth.Core.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DotNetOpenAuth.OAuth.Consumer.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DotNetOpenAuth.OAuth.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DotNetOpenAuth.OpenId.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\EntityFramework.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\Microsoft.Data.Edm.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\Microsoft.Data.OData.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\Microsoft.Web.Infrastructure.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\Microsoft.Web.WebPages.OAuth.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\Newtonsoft.Json.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\SendGrid.SmtpApi.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\SendGridMail.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Spatial.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.Helpers.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.Http.OData.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.Mvc.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.Optimization.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.Razor.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.WebPages.Deployment.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.WebPages.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.WebPages.Razor.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\WebGrease.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\WebMatrix.Data.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\WebMatrix.WebData.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DBManager.pdb
+E:\rahul\Project\SpdySvc\SpdySvc\bin\EntityFramework.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\Newtonsoft.Json.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.Helpers.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.Mvc.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.Razor.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.WebPages.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.WebPages.Deployment.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.WebPages.Razor.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\WebMatrix.Data.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\Microsoft.Web.WebPages.OAuth.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\WebMatrix.WebData.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DotNetOpenAuth.AspNet.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DotNetOpenAuth.Core.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DotNetOpenAuth.OAuth.Consumer.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DotNetOpenAuth.OAuth.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DotNetOpenAuth.OpenId.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Web.Http.OData.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\Microsoft.Data.Edm.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\Microsoft.Data.OData.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\System.Spatial.xml
+E:\rahul\Project\SpdySvc\SpdySvc\bin\de\Microsoft.Data.Edm.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\es\Microsoft.Data.Edm.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\fr\Microsoft.Data.Edm.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\it\Microsoft.Data.Edm.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\ja\Microsoft.Data.Edm.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\ko\Microsoft.Data.Edm.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\ru\Microsoft.Data.Edm.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\de\Microsoft.Data.OData.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\es\Microsoft.Data.OData.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\fr\Microsoft.Data.OData.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\it\Microsoft.Data.OData.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\ja\Microsoft.Data.OData.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\ko\Microsoft.Data.OData.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\ru\Microsoft.Data.OData.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\de\System.Spatial.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\es\System.Spatial.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\fr\System.Spatial.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\it\System.Spatial.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\ja\System.Spatial.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\ko\System.Spatial.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\ru\System.Spatial.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\zh-Hans\System.Spatial.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\bin\zh-Hant\System.Spatial.resources.dll
+E:\rahul\Project\SpdySvc\SpdySvc\obj\Debug\SpdySvc.csprojResolveAssemblyReference.cache
+E:\rahul\Project\SpdySvc\SpdySvc\obj\Debug\SpdySvc.dll
+E:\rahul\Project\SpdySvc\SpdySvc\obj\Debug\SpdySvc.pdb
+D:\spdyS\spdysvc\SpdySvc\bin\SpdySvc.dll.config
+D:\spdyS\spdysvc\SpdySvc\bin\SpdySvc.dll
+D:\spdyS\spdysvc\SpdySvc\bin\SpdySvc.pdb
+D:\spdyS\spdysvc\SpdySvc\bin\Antlr3.Runtime.dll
+D:\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.AspNet.dll
+D:\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.Core.dll
+D:\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OAuth.dll
+D:\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OpenId.dll
+D:\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\spdyS\spdysvc\SpdySvc\bin\EntityFramework.dll
+D:\spdyS\spdysvc\SpdySvc\bin\Microsoft.Data.Edm.dll
+D:\spdyS\spdysvc\SpdySvc\bin\Microsoft.Data.OData.dll
+D:\spdyS\spdysvc\SpdySvc\bin\Microsoft.Web.Infrastructure.dll
+D:\spdyS\spdysvc\SpdySvc\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\spdyS\spdysvc\SpdySvc\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\spdyS\spdysvc\SpdySvc\bin\Newtonsoft.Json.dll
+D:\spdyS\spdysvc\SpdySvc\bin\System.Spatial.dll
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.Helpers.dll
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.Http.OData.dll
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.Mvc.dll
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.Optimization.dll
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.Razor.dll
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.WebPages.Deployment.dll
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.WebPages.dll
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.WebPages.Razor.dll
+D:\spdyS\spdysvc\SpdySvc\bin\WebGrease.dll
+D:\spdyS\spdysvc\SpdySvc\bin\WebMatrix.Data.dll
+D:\spdyS\spdysvc\SpdySvc\bin\WebMatrix.WebData.dll
+D:\spdyS\spdysvc\SpdySvc\bin\EntityFramework.xml
+D:\spdyS\spdysvc\SpdySvc\bin\Newtonsoft.Json.xml
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.Helpers.xml
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.Mvc.xml
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.Razor.xml
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.WebPages.xml
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.WebPages.Deployment.xml
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.WebPages.Razor.xml
+D:\spdyS\spdysvc\SpdySvc\bin\WebMatrix.Data.xml
+D:\spdyS\spdysvc\SpdySvc\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\spdyS\spdysvc\SpdySvc\bin\WebMatrix.WebData.xml
+D:\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.AspNet.xml
+D:\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.Core.xml
+D:\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OAuth.xml
+D:\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OpenId.xml
+D:\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\spdyS\spdysvc\SpdySvc\bin\System.Web.Http.OData.xml
+D:\spdyS\spdysvc\SpdySvc\bin\Microsoft.Data.Edm.xml
+D:\spdyS\spdysvc\SpdySvc\bin\Microsoft.Data.OData.xml
+D:\spdyS\spdysvc\SpdySvc\bin\System.Spatial.xml
+D:\spdyS\spdysvc\SpdySvc\bin\de\Microsoft.Data.Edm.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\es\Microsoft.Data.Edm.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\it\Microsoft.Data.Edm.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\de\Microsoft.Data.OData.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\es\Microsoft.Data.OData.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\fr\Microsoft.Data.OData.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\it\Microsoft.Data.OData.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\ja\Microsoft.Data.OData.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\ko\Microsoft.Data.OData.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\ru\Microsoft.Data.OData.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\de\System.Spatial.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\es\System.Spatial.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\fr\System.Spatial.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\it\System.Spatial.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\ja\System.Spatial.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\ko\System.Spatial.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\ru\System.Spatial.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\zh-Hans\System.Spatial.resources.dll
+D:\spdyS\spdysvc\SpdySvc\bin\zh-Hant\System.Spatial.resources.dll
+D:\spdyS\spdysvc\SpdySvc\obj\Debug\SpdySvc.csprojResolveAssemblyReference.cache
+D:\spdyS\spdysvc\SpdySvc\obj\Debug\SpdySvc.dll
+D:\spdyS\spdysvc\SpdySvc\obj\Debug\SpdySvc.pdb
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\SpdySvc.dll.config
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\SpdySvc.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\SpdySvc.pdb
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\Antlr3.Runtime.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.AspNet.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.Core.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OAuth.Consumer.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OAuth.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OpenId.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OpenId.RelyingParty.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\EntityFramework.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\Microsoft.Data.Edm.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\Microsoft.Data.OData.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\Microsoft.Web.Infrastructure.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\Microsoft.Web.WebPages.OAuth.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\Newtonsoft.Json.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Net.Http.Formatting.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Spatial.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.Helpers.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.Http.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.Http.OData.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.Http.WebHost.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.Mvc.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.Optimization.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.Razor.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.WebPages.Deployment.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.WebPages.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.WebPages.Razor.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\WebGrease.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\WebMatrix.WebData.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\EntityFramework.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\Newtonsoft.Json.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Net.Http.Formatting.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.Helpers.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.Http.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.Http.WebHost.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.Mvc.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.Razor.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.WebPages.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.WebPages.Deployment.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.WebPages.Razor.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\WebMatrix.Data.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\Microsoft.Web.WebPages.OAuth.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\WebMatrix.WebData.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.AspNet.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.Core.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OAuth.Consumer.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OAuth.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OpenId.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\DotNetOpenAuth.OpenId.RelyingParty.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Web.Http.OData.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\Microsoft.Data.Edm.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\Microsoft.Data.OData.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\System.Spatial.xml
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\de\Microsoft.Data.Edm.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\es\Microsoft.Data.Edm.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\it\Microsoft.Data.Edm.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\de\Microsoft.Data.OData.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\es\Microsoft.Data.OData.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\fr\Microsoft.Data.OData.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\it\Microsoft.Data.OData.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\ja\Microsoft.Data.OData.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\ko\Microsoft.Data.OData.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\ru\Microsoft.Data.OData.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\de\System.Spatial.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\es\System.Spatial.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\fr\System.Spatial.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\it\System.Spatial.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\ja\System.Spatial.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\ko\System.Spatial.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\ru\System.Spatial.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\zh-Hans\System.Spatial.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\bin\zh-Hant\System.Spatial.resources.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\obj\Debug\SpdySvc.csprojResolveAssemblyReference.cache
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\obj\Debug\SpdySvc.dll
+D:\Persoal Development\spdyS\spdysvc\SpdySvc\obj\Debug\SpdySvc.pdb

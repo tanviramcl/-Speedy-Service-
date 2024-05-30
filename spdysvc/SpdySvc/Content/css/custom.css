@@ -1,0 +1,651 @@
+﻿body {
+    border-top: 4px solid #c5173d;
+    color: #585858;
+}
+
+.container {
+    width: 940px;
+}
+
+    .container .btn-group {
+        margin: 10px 0;
+    }
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+/*.row { margin-left: 0px;margin-right: 0px;}*/
+header .container {
+    position: relative;
+}
+
+header {
+    background: url("/images/header-background.png") repeat-x scroll left top #c5173d;
+    padding-bottom: 20px;
+}
+
+.navbar {
+    background-color: transparent !important;
+    background-image: none;
+    border: medium none !important;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.067);
+    margin: 0;
+    padding: 0;
+    min-height: 170px;
+}
+
+header .header-title {
+    color: #ffffff;
+    font-family: "Museo500";
+    font-size: 40px;
+    line-height: 50px;
+    height: 50px;
+    text-transform: uppercase;
+}
+
+.navbar-header {
+    float: left;
+}
+
+.navbar a.navbar-brand {
+    display: block;
+    float: left;
+    height: 80px;
+    margin-right: 43px;
+    margin-top: 21px;
+    transition: none 0s ease 0s;
+    width: 165px;
+    padding: 0px;
+}
+
+.navbar-default .navbar-brand {
+    color: #777777;
+}
+
+header #account-controls {
+    background: none repeat scroll 0 0 #c5173d;
+    border-radius: 5px;
+    float: right;
+    margin-top: -5px;
+    padding-left: 15px;
+    padding-right: 10px;
+    padding-top: 5px;
+    position: absolute;
+    right: 0;
+    width: auto;
+    z-index: 100;
+}
+
+    header #account-controls > ul {
+        list-style: outside none none;
+        margin-left: -50px;
+    }
+
+        header #account-controls > ul li {
+            float: left;
+            margin: 0 3px;
+        }
+
+    header #account-controls a {
+        border-left: 1px solid #a30d2e;
+        color: #ffffff;
+        display: inline-block;
+        float: left;
+        padding: 6px 10px 8px 9px;
+        text-decoration: none;
+    }
+
+    header #account-controls #accountfullName {
+        color: #ffffff;
+        display: inline-block;
+        float: left;
+        padding: 6px 10px 8px 9px;
+        text-decoration: none;
+    }
+
+#account-controls li:first-child a {
+    border-left: 0 none;
+}
+
+.navbar-brand {
+    float: left;
+    font-size: 18px;
+    height: 50px;
+    line-height: 20px;
+    padding: 15px;
+}
+
+.navbar a.navbar-brand img {
+    float: left;
+    height: 80px;
+    margin: 0;
+    width: 200px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.navbar a.navbar-brand span.logo_title {
+    display: block;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 40px;
+    padding: 0px 0 0;
+    text-shadow: 1px 1px 0 #ffffff;
+    font-family: Rockwell,Consolas,"Courier New",Courier,monospace;
+}
+
+.navbar a.navbar-brand span.logo_subtitle {
+    display: block;
+    font-size: 13px;
+    font-weight: 300;
+    text-shadow: 1px 1px 0 #ffffff;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand {
+    background-color: transparent;
+    color: #c8c8c8;
+    outline: medium none;
+}
+
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+        background-color: transparent;
+        color: #c8c8c8;
+    }
+
+.navbar a.navbar-brand span.logo_title strong {
+    font-weight: 300;
+}
+
+.navbar .nav {
+    margin: 6px -15px 0 0;
+}
+
+    .navbar .nav li a {
+        background-color: transparent !important;
+        border-bottom: 1px solid transparent;
+        margin: 0 3px;
+        text-transform: uppercase;
+    }
+
+        .navbar .nav li a:hover, .navbar .nav li a:active {
+            background-color: transparent;
+            border-bottom: 1px solid #428bca;
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0.067);
+            color: #333333;
+        }
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: #e7e7e7;
+    color: #555555;
+    border-bottom: 1px solid #428bca;
+}
+
+#social_media_wrapper {
+    background: none repeat scroll 0 0 #428bca;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    display: inline-block;
+    overflow: hidden;
+    padding: 10px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    z-index: 101;
+}
+
+#sign {
+    font-size: 12px;
+    height: 50px;
+    line-height: 40px;
+    padding-right: 10px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    z-index: 101;
+}
+
+    #sign > ul {
+        list-style: outside none none;
+    }
+
+        #sign > ul li {
+            float: left;
+            margin: 0 3px;
+        }
+
+[class^="icon-"], [class*=" icon-"] {
+    background-image: url("/../images/glyphicons-halflings.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    line-height: 14px;
+    margin-top: 8px;
+    vertical-align: text-top;
+    width: 14px;
+    margin-right: 9px;
+    padding-bottom: 8px;
+    padding-right: 10px;
+    padding-top: 6px;
+}
+
+.icon-user {
+    background-position: -168px 0;
+}
+
+.main {
+    background-color: #fff;
+    position: relative;
+}
+
+    .main > .container {
+        min-height: 450px;
+        padding-bottom: 15px;
+        padding-top: 40px;
+    }
+
+footer {
+    background: url("/images/footer-digger-background.png") repeat-x scroll 40% 0 #c52443;
+    padding-top: 160px;
+    position: relative;
+}
+
+.copyright {
+    background: none repeat scroll 0 0 #464646;
+    border-top: 1px solid #000;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    padding: 15px 0;
+}
+
+.btn-primary {
+    background-color: #c5173d;
+    border-color: #c5173d;
+}
+
+    .btn-primary:hover, .btn-primary:active, .btn-primary.hover {
+        background-color: #c5173d;
+        border-color: #c5173d;
+    }
+
+h1, .h1, h2, .h2, h3, .h3 {
+    margin-top: 0px;
+}
+
+.panel {
+    border: none;
+}
+
+    .panel.category-navigation {
+        border: none;
+    }
+
+.panel-heading.category-navigation-heading, .panel-default > .panel-heading {
+    background: none repeat scroll 0 0 #c5173d;
+    border: 1px solid #c5173d;
+    color: #ffffff;
+    font-size: 1.4em;
+    padding: 10px;
+}
+
+.category-navigation .panel-body {
+    padding: 0px;
+}
+
+.panel-body {
+    background: none repeat scroll 0 0 #fcfcfc;
+    border-style: none solid;
+    border-bottom: 0px;
+    border-top: 0px;
+    border: 1px solid #ddd;
+}
+
+
+    .panel-body .list-group {
+        margin-bottom: 0px;
+    }
+
+        .panel-body .list-group .list-group-item, .panel-body .list-group .list-group-item.active, .panel-body .list-group .list-group-item.active:hover, .panel-body .list-group .list-group-item.active:focus {
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+        }
+
+            .panel-body .list-group .list-group-item.active, .panel-body .list-group .list-group-item:hover, .panel-body .list-group .list-group-item:focus {
+                color: #c5173d;
+                background-color: #f5f5f5;
+                border-color: #ddd;
+            }
+
+.list-group-item:first-child {
+    border-top: 0 none;
+}
+.list-group-item:last-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin-bottom: 0;
+    border:0 0 1px 0;
+}
+
+.thumbnail .caption {
+    height: 100px;
+    overflow: hidden;
+}
+.thumbnail .caption:hover {
+    background: none repeat scroll 0 0 #e0e0e0;
+}
+
+.thumbnail.category .caption {
+    height: 55px;
+    overflow: hidden;
+    text-align: center;
+}
+
+    .thumbnail .caption h4, .thumbnail .caption h4 a {
+        font-size: 16px;
+        color: #585858;
+        font-weight: 600;
+        text-align:center;
+    }
+
+h1.product-name {
+    color: #c5173d;
+    font-family: "Museo500";
+    font-size: 2em;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+hr, .hr {
+    background: none repeat scroll 0 0 #e7e7e7;
+    border: medium none;
+    height: 1px;
+    margin-bottom: 25px;
+    outline: medium none;
+    overflow: hidden;
+    width: 100%;
+}
+
+#product_tab li {
+    margin-right: 2px;
+    margin-bottom: 0px;
+}
+
+#product_tab.nav-tabs {
+    border-bottom: 3px solid #c5173d;
+}
+
+#product_tab li.active a {
+    background: none repeat scroll 0 0 #c5173d;
+    color: #ffffff;
+}
+
+#product_tab a {
+    background: none repeat scroll 0 0 #e0dfde;
+    color: #585858;
+    display: inline-block;
+    font-size: 1.08em;
+    font-weight: bold;
+    margin-right: 2px;
+    padding: 10px 12px 11px;
+    text-decoration: none;
+    border: none;
+    border-radius: 0px;
+}
+
+#tabpanel .tab-content {
+    background: none repeat scroll 0 0 #ffffff;
+    border: medium none;
+    margin-bottom: 40px;
+    margin-top: 0;
+    padding: 30px 0 0;
+}
+
+    #tabpanel .tab-content .full-image {
+        margin: 0;
+        width: 100%;
+    }
+
+    #tabpanel .tab-content .discription {
+    }
+
+        #tabpanel .tab-content .discription .heading {
+            font-size: 1.17em;
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        #tabpanel .tab-content .discription .text {
+            line-height: 1.4em;
+            margin-bottom: 20px;
+        }
+
+.panel-price {
+    color: #233182;
+    font-size: 1.33em;
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+
+    .panel-price span {
+        color: #c5173d;
+        display: inline-block;
+        float: right;
+        text-align: right;
+    }
+
+.hire .panel-footer label {
+    color: #626061;
+    float: left;
+    font-size: 1.17em;
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.hire .panel-footer, .order .panel-footer {
+    background-color: #fff;
+    height: 65px;
+    border: 1px solid #ddd;
+    height: auto;
+    padding: 15px;
+}
+
+.hire .panel-footer {
+    height: 75px;
+}
+
+
+    .hire .panel-footer input#qty {
+        border: 1px solid #e9e9e9;
+        float: left;
+        height: 28px;
+        padding: 5px;
+        text-align: center;
+        width: 40px;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+
+    .hire .panel-footer button {
+        background: none repeat scroll 0 0 #c5173d;
+        border: medium none;
+        border-radius: 3px;
+        color: #ffffff;
+        float: right;
+        font-weight: bold;
+        height: 45px;
+        outline: medium none;
+        width: 100px;
+    }
+
+.panel.order .summary-area table {
+    border: medium none;
+    font-size: 1.17em;
+    margin-bottom: 0;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    .panel.order .summary-area table th {
+        border: medium none;
+        color: #505050;
+        font-weight: normal;
+        padding: 0 0 8px;
+    }
+
+    .panel.order .summary-area table td {
+        border: medium none;
+        font-weight: bold;
+        padding: 0 0 8px;
+    }
+
+.order .panel-footer button {
+    background: none repeat scroll 0 0 #c5173d;
+    border: medium none;
+    border-radius: 3px;
+    color: #ffffff;
+    display: block;
+    font-size: 1.17em;
+    font-weight: bold;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+.basket-item {
+    background: none repeat scroll 0 0 #f9f9f9;
+    border: 1px solid #e9e9e9;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.basket-item table.table-bordered td {
+    border: 1px solid #d2d2d2;
+    font-weight: bold;
+    padding: 5px;
+    background: repeat scroll 0 0 #ffffff;
+}
+
+.basket-item table.table-bordered th {
+    background: none repeat scroll 0 0 #f9f9f9;
+    border: 1px solid #d2d2d2;
+    color: #585858;
+    font-size: 1.17em;
+    padding: 5px 5px 5px 10px;
+}
+
+.table > caption + thead > tr:first-child > th, .table > colgroup + thead > tr:first-child > th, .table > thead:first-child > tr:first-child > th, .table > caption + thead > tr:first-child > td, .table > colgroup + thead > tr:first-child > td, .table > thead:first-child > tr:first-child > td {
+    border-top: 1px solid #d2d2d2;
+}
+.table > thead > tr > th, .table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > td, .table > tbody > tr > td, .table > tfoot > tr > td { vertical-align:middle;}
+
+.basket-item h1 {
+    color: #c5173d;
+    font-family: "Museo500";
+    font-size: 1.83em;
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+.basket-item .thume-image {
+    float: left;
+    margin-right: 5px;
+}
+
+    .basket-item .thume-image img {
+        border: 1px solid #d2d2d2;
+        display: block;
+        width: 68px;
+        height: 68px;
+    }
+
+.basket-item .product-name {
+    float: left;
+    color: #233182;
+    font-size: 1.17em;
+    font-weight: bold;
+    width:60%;
+}
+
+.basket-item .quantity {
+    border: 1px solid #d2d2d2;
+    outline: medium none;
+    padding: 5px;
+    text-align: center;
+    width: 34px;    
+}
+.table.table-bordered.dataTable div {
+    float: left;
+}
+.basket-item .button-remove { margin-right: 5px; width: 17px; padding-top:22px;}
+.basket-item .button-remove a {
+    background: url("/images/button-remove.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: medium none;
+    cursor: pointer;
+    float: none;
+    height: 17px;
+    margin: 0;
+    outline: medium none;
+    padding: 0;
+    width: 17px;
+}
+#catList > ul { list-style:none;padding-left:0px; margin:0;}
+#catList > ul >li> ul { list-style:none;padding-left:0px; margin:0;}
+#catList li a { border-bottom: 1px solid #ddd;}
+#catList li a.active { background: none repeat scroll 0 0 #fff; border-bottom: 0 solid #ddd;}
+.list-group li ul li a { padding-left: 25px;}
+#catList li ul li a {  border-bottom: medium none;}
+#catList li ul li:last-child a {  border-bottom: 1px solid #ddd;}
+#catList > ul >li> ul >li > ul { list-style:none;padding-left:0px; margin:0;}
+#catList > ul >li> ul >li > ul > li > a { padding-left:35px;}
+#catList > ul >li> ul >li > ul > li:last-child > a { border-bottom: none;}
+
+/*
+
+table.dataTable { margin: 0 auto 20px;}
+table.dataTable thead th, table.dataTable thead td {
+    border-bottom: 1px solid #e7e7e7;
+    padding: 10px 18px;
+    color:#999;
+}
+table.dataTable{    
+   border: 1px solid #e7e7e7;
+   margin-top:20px;
+}
+    table.dataTable.no-footer {border-bottom: 1px solid #e7e7e7;
+    }
+.page-header {
+    border-bottom: 0 solid #eee;
+    margin: 20px 0;
+    padding-bottom: 0;
+    
+}
+label {font-weight: normal;}
+table.dataTable.compact thead th, table.dataTable.compact thead td {
+    padding: 10px 9px;
+}
+.dataTables_wrapper .dataTables_filter { margin-bottom:15px;}
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12{
+    padding-left:0px;
+}
+    */
+
+
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .h1.product-name {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

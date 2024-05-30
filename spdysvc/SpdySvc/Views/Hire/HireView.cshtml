@@ -1,0 +1,145 @@
+﻿@{
+    ViewBag.Title = "Test";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<meta name="viewport" content="width=device-width" />
+
+
+<link type="text/css" href="~/Content/css/jquery.dataTables.css" rel="stylesheet" />
+<link type="text/css" href="~/Content/css/shCore.css" rel="stylesheet" />
+<style type="text/css" class="init">
+    
+</style>
+<script src="~/Scripts/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="~/Scripts/HireView.js"></script>
+
+<script src="~/Scripts/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="~/Scripts/shCore.js"></script>
+<script type="text/javascript" language="javascript" src="~/Scripts/demo.js"></script>
+<script type="text/javascript" language="javascript" class="init">
+
+    $(document).ready(function () {
+        $('#example').dataTable();
+    });
+
+
+
+</script>
+@Html.Partial("_Modal")
+@Html.Partial("_DialogBox")
+<section class="content-header">
+    <h1>
+        @ViewBag.Message
+    </h1>
+</section>
+@using SpdySvc.Models;
+@using SpdySvc.Models.SpdyMembershipUser;
+@using System.Web.Security;
+
+@{
+    SpdyMembershipUser usr = (SpdyMembershipUser)Membership.GetUser();
+
+    SpdySvc.Models.Authorization.UserRoles role;
+    role = SpdySvc.SingleTon.SingleTon.Instance().UserAuthorization.AssignedUserRole;
+  
+}
+ @if (role == SpdySvc.Models.Authorization.UserRoles.Admin || role == SpdySvc.Models.Authorization.UserRoles.Approver || role == SpdySvc.Models.Authorization.UserRoles.Requestor)
+ { 
+<section class="content">
+    <div class="box">
+        <div class="box-body">
+                @{
+                if (role == SpdySvc.Models.Authorization.UserRoles.Admin || role == SpdySvc.Models.Authorization.UserRoles.Approver)
+                {
+                <button type="button" style="  float: right;    margin-bottom: 2%;" class="btn btn-danger pull-right" onclick="rejectAction()">Reject</button>
+                <button type="button" style=" margin-right: 1%" class="btn btn-info pull-right" onclick="approveAction()">Approve</button>
+                }
+                else if (role == SpdySvc.Models.Authorization.UserRoles.Requestor || role == SpdySvc.Models.Authorization.UserRoles.Requestor)
+                {
+                    <button type="button" style="  float: right;    margin-bottom: 2%;" class="btn btn-info pull-right" onclick="offHireAction()">Off Hire</button>
+                }
+
+}
+            <table id="example" class="display compact" cellspacing="0" width="100%">
+                <thead>
+                    <tr> 
+                        <th><input style="display:none" id="SelAll" type="checkbox" onchange="SelectAllRow()" /></th>
+                        <th style="display:none"></th> 
+                        <th>Order Reference</th>                      
+                        <th>Hire On</th>
+                        <th>Hire Off</th>
+                        <th>Hire Status</th>
+                        <th>Requester</th>
+                        <th>Total Cost</th>
+                        <th>Total Hire Deposite</th>
+                        <th>Total Hire Items</th>
+                        <th>Hire Limit</th>
+                        @*@if (Convert.ToInt32(usr.RoleID) == 1)
+                        {                           
+                          <th>Action</th>
+                        }*@
+                       <th></th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    @foreach (Order ord in ViewBag.TrnList)
+                    {
+                        String url = "../Modal/Index?IDN=" + ord.OrderId;
+                        <tr>
+                            <td>@{if (ord.OrderStatusID != 6)
+                                  {<input type="checkbox"/>}
+                               }</td>
+                            <td style="display:none">@ord.OrderId</td>
+                            <td>@ord.OrderId</td>
+                            <td>@ord.OnHireDate.ToShortDateString()</td>
+                            <td>@ord.OffHireDate.ToShortDateString()</td>
+                               <td>@(ord.OrderStatus)</td>
+                          @* @{
+                        if (Convert.ToDecimal(ord.HireLimit) > Convert.ToDecimal(ord.TotalHireCost))
+                        { 
+                        <td>Approved</td>
+                        }
+                        else
+                        { 
+                        <td>@(ord.OrderStatus)</td>
+                        }
+                                
+                            }*@
+                            
+                            <td>@ord.FirstName</td>
+                            <td>@ord.TotalHireCost</td>
+                            <td>@ord.TotalHireDeposit</td>
+                            <td>@ord.TotalHire</td>
+                             <td>@ord.HireLimit</td>       
+                             @*@{   if (Convert.ToInt32(usr.RoleID) == 1)
+                                  {                 
+                                     <td><button class="btn btn-info" type="button" id="" value="@((ord.OrderStatusID==6) ? "UnApproved" : "Approved")" onclick="ChangeStatus(@ord.OrderId  )">@((ord.OrderStatusID==6) ? "UnApproved" : "Approved")</button></td>
+                                  }
+                               }*@
+                            <td>
+                                @{if (ord.OrderStatusID != 6)
+                                {
+                                    <button type="button" id="mod1" class="btn btn-info" data-toggle="modal" href="@url" data-target="#myModal">Ammend</button>
+                                }
+                                }
+                            </td>
+                        </tr>
+
+                    }
+                </tbody>
+            </table>
+            </div>
+        </div>
+
+</section>
+ }
+ else
+ { 
+ <strong>Sorry! You Have no access!</strong>
+ }
+
+
+
+

@@ -1,0 +1,24 @@
+﻿<div class="panel panel-default category-navigation">
+    <div class="panel-heading category-navigation-heading">Department</div>
+    <div class="panel-body">
+        <div class="list-group" id="catList">
+            <a href="#" class="list-group-item">Loading...</a>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                url: '/Category/GetAllCategorys',
+                type: 'POST',
+                //dataType: 'json',
+                //contentType: 'application/json',
+                cache: false,
+                data: {},
+                success: function (res) {
+                    $('#catList').html(res);
+                }
+            });
+        });
+</script>
+

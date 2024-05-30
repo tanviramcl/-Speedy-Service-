@@ -1,0 +1,14 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+@using SpdySvc.SingleTon;
+@using SpdySvc.Models;
+@using System.Web;
+@{
+    String ID = ViewBag.IDN;
+    MailQueue mail= SingleTon.Instance().MailLst.Find(itm=>itm.MailQueueID==Convert.ToInt32(ID));
+}
+
+@Html.Raw(mail.BodyHtml);

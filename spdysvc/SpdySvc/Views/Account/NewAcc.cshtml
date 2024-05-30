@@ -1,0 +1,53 @@
+﻿@model SpdySvc.Models.UserRole
+
+@{
+    ViewBag.Title = "NewAcc";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>NewAcc</h2>
+
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>UserRole</legend>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.IDN)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.IDN)
+            @Html.ValidationMessageFor(model => model.IDN)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.RoleID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.RoleID)
+            @Html.ValidationMessageFor(model => model.RoleID)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.userID)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.userID)
+            @Html.ValidationMessageFor(model => model.userID)
+        </div>
+
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

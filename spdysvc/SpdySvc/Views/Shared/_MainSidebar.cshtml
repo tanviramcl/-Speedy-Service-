@@ -1,0 +1,121 @@
+﻿@using SpdySvc.Provider;
+@using SpdySvc.Models.SpdyMembershipUser;
+@{
+SpdyMembershipUser usr=  (SpdyMembershipUser)Membership.GetUser();
+
+//Added by Anis 22/04/2015
+
+SpdySvc.Models.Authorization.UserRoles role;
+role = usr.SpdyAuthorization.AssignedUserRole;
+
+
+}
+ @if (role == SpdySvc.Models.Authorization.UserRoles.Requestor)
+ { 
+   <section class="sidebar">       
+        <ul class="sidebar-menu">            
+            <li class="active treeview">
+                <a href="/Requestor/index">
+                    <i class="fa fa-dashboard"></i> <span>Requestor Dashboard</span> 
+                    <!--i class="fa fa-angle-left pull-right"></i -->
+                </a>                
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    <span>My account</span>                    
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                  @*  <li><a href=""><i class="fa fa-circle-o"></i> Edit account</a></li>
+                    <li><a href="../Account/ResetPassword"><i class="fa fa-circle-o"></i> Password Reset</a></li>     *@
+                     <li><a href="../Mail/Index"><i class="fa fa-circle-o"></i> Mail </a></li>                    
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-th"></i> <span>View All Request</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="../Hire/HireView"><i class="fa fa-circle-o"></i>Live Hire</a></li>
+                </ul>
+                <ul class="treeview-menu">
+                    <li><a href="../Requestor/OffHire"><i class="fa fa-circle-o"></i>Off Hire</a></li>
+                </ul>
+            </li>
+                
+                
+        </ul>
+    </section>
+ }
+ else if (role == SpdySvc.Models.Authorization.UserRoles.Admin || role == SpdySvc.Models.Authorization.UserRoles.Approver)
+ {
+    <section class="sidebar">
+        <ul class="sidebar-menu">
+            <li class="active treeview">
+                <a href="/Requestor/index">
+                    <i class="fa fa-dashboard"></i> <span>Admin Dashboard </span>
+                    <!--i class="fa fa-angle-left pull-right"></i -->
+                </a>
+            </li>
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    <span>My account</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                   @* <li><a href="/Account/AccountUpdate"><i class="fa fa-circle-o"></i> Edit account</a></li>
+                    <li><a href="/Account/ResetPassword"><i class="fa fa-circle-o"></i> Password Reset</a></li>*@
+                      <li><a href="../Mail/Index"><i class="fa fa-circle-o"></i> Mail </a></li>     
+                </ul>
+            </li>
+            @if(role==SpdySvc.Models.Authorization.UserRoles.Admin){
+            <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    <span>User Management</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                 
+                    <li><a href="~/Users/Index"><i class="fa fa-circle-o"></i> User List </a></li>
+                    <li><a href="~/Users/ViewPermissionDetails"><i class="fa fa-circle-o"></i>View Permission Details</a></li>
+                </ul>
+            </li>
+            }
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-th"></i> <span>View All Request</span>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="../Hire/HireView"><i class="fa fa-circle-o"></i>Live Hire</a></li>
+                </ul>
+                <ul class="treeview-menu">
+                    <li><a href="../Requestor/OffHire"><i class="fa fa-circle-o"></i>Off Hire</a></li>
+                </ul>
+            </li>
+             <li class="treeview">
+                <a href="#">
+                    <i class="fa fa-user"></i>
+                    <span>Requester</span>
+                    <i class="fa fa-angle-left pull-right"></i>
+                </a>
+                <ul class="treeview-menu">
+                    <li><a href="../Requestor/HireLimit"><i class="fa fa-circle-o"></i>Hire Limit</a></li>    
+                </ul>
+            </li>
+
+
+        </ul>
+    </section>
+
+ }
+ else
+ {
+     
+     
+ }
+
+    <!-- /.sidebar -->

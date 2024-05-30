@@ -1,0 +1,98 @@
+﻿@{
+    ViewBag.Title = "Product";
+    var product = ViewBag.Product;
+    var basketItem = ViewBag.BasketItem;
+    string Img="";
+        string instock = "";        
+        if (product.file_name == "")
+        {
+            Img = "42-06-h.JPG.ashx.jpg";
+        }
+        else
+        {
+            Img = product.file_name;
+        }
+        Img = "42-06-h.JPG.ashx.jpg";
+       // int qty= Convert.ToInt32(product.InQty);
+       // if (qty > 0) { instock = "In stock"; } else { instock = "Out of stock"; }
+}
+<link href="~/Content/css/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
+<script src="~/Scripts/moment.min.js" type="text/javascript"></script>
+<script src="~/Scripts/daterangepicker.js" type="text/javascript"></script>
+<script src="~/Scripts/Product.js" type="text/javascript"></script>
+<h1 class="product-name"></h1>
+<div class="hr mobile-hide"></div>
+<div class="row">
+    <form id="productForm" action="" method="get">
+        <div class="col-sm-6 col-lg-6 col-md-6">
+            <input type="hidden" name="product_id" id="id" value="@product.product_code" />
+            <input type="hidden" name="onhire" id="onhire" value="" />
+            <input type="hidden" name="offhire" id="offhire" value="" />
+            <input type="hidden" name="totaldays" id="totaldays" value="" />
+            <input type="hidden" name="unitprice" id="unitprice" value="" />
+            
+            <div id="tabpanel" role="tabpanel">
+                <!-- Nav tabs -->
+                <ul id="product_tab" class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#overview" aria-controls="overview" role="tab" data-toggle="tab">Overview</a></li>
+                    <li role="presentation"><a href="#details" aria-controls="details" role="tab" data-toggle="tab">Details</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="overview">
+                        <div class="full-image">
+                            <img title="" alt="" src="~/Images/@Img">
+                        </div>
+                        <div class="discription">
+                            <div class="heading">Product Overview</div>
+                            <div class="text">@product.description</div>
+                        </div>
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="details">Details</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-lg-6 col-md-6">
+            <div class="panel panel-default hire">
+                <div class="panel-heading">
+                    <h3 class="panel-title">Hire Options</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="panel-price clearfix">Hire from:<span id="HireProductPrices">£ per day</span></div>
+                    <div class="form-group">
+                        <label>On hire - off-hire date range:</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">
+                                <i class="glyphicon glyphicon-calendar"></i>
+                            </div>
+                            <input type="text" class="form-control pull-right" id="reservation" />
+                        </div>
+                        <label id="lbltotaldays"></label>
+                    </div>
+                    <div class="panel-price clearfix">Total hire price:<span id="totalHirePrices">£</span></div>
+                </div>
+                <div class="panel-footer">
+                    <label for="quantity">Quantity</label>
+                    <input type="text" id="qty" value="1" maxlength="3" name="InQty" />
+                    <button type="submit">Hire Now</button>
+                </div>
+            </div>
+        </div>
+        </form>
+</div>
+
+     
+    @if (basketItem != null && basketItem.Count>0)
+    {
+        var Item = basketItem[0];
+        
+       <script>            
+           $('#onhire').val("@Item.FromDate");
+           $('#offhire').val("@Item.ToDate");          
+           $('#qty').val("@Item.Quantity");
+           $('#reservation').val($('#onhire').val() + ' - ' + $('#offhire').val());           
+           calculatePrice();
+        </script>
+    }
+

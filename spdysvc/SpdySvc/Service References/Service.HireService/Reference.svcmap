@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="839e2e79-8117-45b1-a847-db918b694aea" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://speedyservices.speedytest.co.uk/HireService/HireService.svc " Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="HireService.xsd" MetadataType="Schema" ID="ed38f008-e834-45e6-b39e-ace0c94e9752" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/HireService/HireService.svc?xsd=xsd0" />
+    <MetadataFile FileName="HireService1.xsd" MetadataType="Schema" ID="de4a427f-4c41-4c29-8b44-87cceca6be29" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/HireService/HireService.svc?xsd=xsd3" />
+    <MetadataFile FileName="HireService2.xsd" MetadataType="Schema" ID="1118009f-7eb0-443d-83e9-9ec8a0ef386f" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/HireService/HireService.svc?xsd=xsd1" />
+    <MetadataFile FileName="HireService3.xsd" MetadataType="Schema" ID="9d5a09ce-d34f-41e5-9c26-9eb0f96dd4ab" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/HireService/HireService.svc?xsd=xsd4" />
+    <MetadataFile FileName="HireService4.xsd" MetadataType="Schema" ID="97d87037-aa10-4294-a824-a1262207ff1d" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/HireService/HireService.svc?xsd=xsd2" />
+    <MetadataFile FileName="HireService.disco" MetadataType="Disco" ID="8443dd1b-6d50-4d24-bb34-0181ff4643e9" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/HireService/HireService.svc?disco" />
+    <MetadataFile FileName="HireService.wsdl" MetadataType="Wsdl" ID="0dd86f61-7eb7-4b05-bb22-bd1581dd22ac" SourceId="1" SourceUrl="http://speedyservices.speedytest.co.uk/HireService/HireService.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

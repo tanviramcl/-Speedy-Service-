@@ -1,0 +1,55 @@
+﻿    <ul>        
+        @if (Request.IsAuthenticated)
+        {
+            <li id="accountfullName"></li>
+            <li id="accountLink">@Html.ActionLink("My Account", "HireView", "Hire")</li>
+            <li>
+                @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" }))
+                {
+                    @Html.AntiForgeryToken()
+
+                }
+                <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
+            </li>
+        }
+        else
+        {
+
+            <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+            
+            <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+
+        }
+        <li>@Html.ActionLink("Basket", "index", "basket", routeValues: null, htmlAttributes: new { id = "cart-top" })</li>
+    </ul>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $.ajax({
+                url: '/Account/GetUser',
+                type: 'POST',
+                dataType: 'json',
+                contentType: 'application/json',
+                cache: false,
+                data: {},
+                success: function (res) {
+                    var acName = "Hi "+res.FirstName + " " + res.LastName;
+                    if (res.RoleID == 3) {
+                        var acLink = '/Requestor/index';
+                    } else {
+                        var acLink = '/Approver/index';
+                    }
+                    $("#accountfullName").text(acName);
+                    //$("#accountLink a").attr('href', acLink);
+                   
+                }
+            });
+
+            getTotalBasketItem();
+
+        });       
+
+    </script>
+
+
+
+

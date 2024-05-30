@@ -1,0 +1,26 @@
+﻿@{
+    Layout = "../shared/_layoutadmin.cshtml";
+    ViewBag.Title = "Update Account";
+}
+
+<fieldset>
+    <legend>Update your Account</legend>
+    <div class="modal"></div>
+    <form id="regForm">
+        <table style="width:100%">
+            <tr><td><div style="font-weight:bold;margin-left:30%" id="lblMsg"></div></td></tr>
+            <tr>
+                <td>FirstName : <input style="width: 66%; margin-left: 1%;" name="txtFirstName" type="text" id="txtFirstName" /></td>
+            </tr>
+            <tr>
+                <td>LastName: <input style="margin-left: 2%; width: 65%;" name="txtLastName" type="text" id="txtLastName" /></td>
+            </tr>
+            <tr>
+                <td>Phone: <input style="margin-left: 5%; width: 65%;" name="txtPhone" type="text" id="txtPhone" /></td>
+            </tr>
+        </table>
+        <input type="submit" id="submit" value="Submit" />
+    </form>
+
+</fieldset>
+<script src="~/Scripts/customAccountUpdate.js"></script>
